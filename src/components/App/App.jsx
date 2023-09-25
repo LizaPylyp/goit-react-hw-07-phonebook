@@ -3,12 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { getContacts } from 'redux/selectors';
 import { fetchContacts } from 'redux/actions';
-import { ContactForm } from 'components/ContactForm/ContactForm';
-import { Filter } from 'components/Filter/Filter';
-import { ContactList } from 'components/ContactListt/ContactList';
-import { Section } from 'components/Sectio/Section';
+import { ContactForm } from '../ContactForm/ContactForm';
+import { Filter } from '../Filter/Filter';
+import { ContactList } from '../ContactListt/ContactList';
+import { Section } from '../Sectio/Section';
 import { Container } from './App.styled';
-
 export function App() {
   const dispatch = useDispatch();
   const { isLoading, error } = useSelector(getContacts);
